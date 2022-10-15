@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main- writes scripts
+ * main - writes scripts
  *
  * return always 0
  */
