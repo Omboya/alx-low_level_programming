@@ -6,33 +6,25 @@
  */
 int main(void)
 {
-		int i, k = '0', j;
+		int c, i;
 
+		for (c = '0'; c <= '9'; c++)
+		{
 			for (i = '0'; i <= '9'; i++)
 			{
-			for (j = k; j <= '9'; j++)
-			{
-			if (i != j)
-			{
+				if (c < i)
+					putchar(c);
 				putchar(i);
-				putchar(j);
-			}
-			if (i == j)
-			}
-			continue
-			}
-			if (i == '8' && j == '9')
-			{
-				break;
-			}
-			else
-{
-																																	putchar(',');
-																																					putchar(' ');
-																																								}
-																										}
-										k++;
-											}
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+																																			}
+																	}
+									}
+
 				putchar('\n');
+
 					return (0);
 }
