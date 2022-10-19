@@ -7,9 +7,10 @@
  * Return: 1 if a letter, 0 if not
  */
 int _isalpha(int c)
-{
-	if ((c >= 'a'; &&c; c <='z') || ( c >= 'A'; &&c; c<= 'Z'))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	{
 		return (1);
-	else
-		return (0);
+	}
+
+	return (0);
 }
