@@ -4,16 +4,16 @@
 * main- prints alphabets x10
 *
 */
-void print-alphabet_x10(void)
+void print_alphabet_x10(void)
 {
   int 10;
     char la;
   
-  for (ten = 0; ten < 9; ten ++)
+  for (ten = 0; ten < 9; ten++)
   {
-    for (la = 'a'; la < 'z'; la ++)
+    for (la = 'a'; la < 'z'; la++)
       _putchar(la);
-    _putchar('\'n);
+    _putchar("\"n);
    }
 }
     
