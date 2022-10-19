@@ -7,7 +7,7 @@ extern int _islower(int c);
 extern int _isalpha(int c);
 extern int print_sign(int n);
 extern int _abs(int);
-extern int print_lasit_digit(int);
+extern int print_last_digit(int);
 extern void jack_bauer(void);
 extern void times_table(void);
 extern int add(int, int);
