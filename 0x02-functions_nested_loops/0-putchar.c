@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 #include <unistd.h>
 
@@ -12,3 +13,6 @@ int _putchar(char c)
 {
 		return (write(1, &c, 1));
 }
+=======
+
+>>>>>>> c5b9100b7413b41b6cfad4899320551df630a488
