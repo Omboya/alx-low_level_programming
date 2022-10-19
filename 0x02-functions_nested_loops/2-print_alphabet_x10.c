@@ -2,16 +2,17 @@
 
 /**
 * prints_alphabet- prints ten times
-*
+* Returns: on sucess 1
 */
 void print_alphabet_x10(void) 
 {
-	int 10;
-	char la;
-	for (ten = 0; ten < 9; ten++)
+	char j,b;
+	for (b = 0; b < 10; b++)
 	{
-		for (la = 'a'; la < 'z'; la++)
-			_putchar(la);
+		for (j = 'a'; j <= 'z'; j++)
+		{
+			_putchar(j);
+		}
 		_putchar('\n')
 	}
 }
