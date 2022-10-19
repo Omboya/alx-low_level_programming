@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * main - _isalpha checks for alphabets
@@ -8,7 +8,8 @@ nclude "main.h"
  */
 int _isalpha(int c)
 {
-	if ((c >= 'a'; &&c; c <='z') || ( c >= 'A'; &&c; c<= 'Z'))
+	if (c >= 'a'; &&c; c <= 'z') || 
+			(c >= 'A'; &&c; c <= 'Z')
 		return (1);
 	else
 		return (0);
