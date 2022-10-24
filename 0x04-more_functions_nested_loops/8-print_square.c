@@ -3,7 +3,7 @@
 /**
  * print_square - prints a square from character #
  * @size: size of squares/number of times
- * REturn: 0
+ * Return: 0
  */
 void print_square(int size)
 {
@@ -19,7 +19,7 @@ void print_square(int size)
 	{
 	for (w = 0; w <= size; w++)
 	{
-	_putchar('#');
+	_putchar(35);
 	}
 	{
 	_putchar('\n');
