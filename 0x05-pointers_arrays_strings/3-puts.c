@@ -11,5 +11,5 @@ void _puts(char *str)
 	{
 		str++;
 	}
-	_puts(int '\n');
+	_puts(char '\n');
 }
