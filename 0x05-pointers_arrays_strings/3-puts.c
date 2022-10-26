@@ -9,6 +9,6 @@ void _puts(char *str)
 {
 	while (*str)
 	{
-		_puts(str++);
+		str++;
 	}
 }
