@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strcat - joins two stings
@@ -15,9 +14,9 @@ char *_strcat(char *dest, char *src)
 	{
 		dlen++;
 	}
-	for  (i = 0; src[i] != '\0'; i++)
+	for  (i = 0; src[i] != 0; i++)
 	{
-		dest[src] dlen = scr[i];
+		dest[dlen] = scr[i];
 		dlen++;
 	}
 	dest[dlen] = '\0';
