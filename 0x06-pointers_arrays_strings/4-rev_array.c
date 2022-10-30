@@ -8,16 +8,12 @@
 
 void reverse_array(int *a, int n)
 {
-	int *p, i, k, aux;
-
-	p = a
-	for (i = 0; i < n; i++)
-		p++;
-	for (k = 0; k <= i / 2; k++)
+	int tmp, i;
+	for (i = n - 1; i >= n / 2; i--)
 	{
-		aux = a[k];
-		a[k] = *p;
-		*p = aux;
-		p--;
+		tmp = a[n - 1 - i];
+		a[n - 1 - i] = a[i];
+		a[i] = tmp;
+	}
 }
 
