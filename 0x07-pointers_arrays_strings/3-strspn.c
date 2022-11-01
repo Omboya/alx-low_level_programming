@@ -13,15 +13,17 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s)
 
-	for (index = 0; accept[index]; index++)
+	for (i = 0; accept[i]; i++)
 	{
-		if (*s == accept[index])bool
+		if (*s == accept[i])bool
 
 		{
 			bytes++;
 			break;
 		}
-		else if (accept[index + 1] == '\0')
+		else if (accept[i + 1] == '\0')
 			return (bytes);
 	}
+	s++;
+	return (bytes);
 }
