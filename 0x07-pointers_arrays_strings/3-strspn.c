@@ -8,22 +8,22 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes = 0;
-	int i;
+	unsigned int i, j, bool;
+	for (i = 0; *(s + i) != '\0'; i++)
 
-	while (*s)
-
-	for (i = 0; accept[i]; i++)
 	{
-		if (*s == accept[i])bool
+		bool = 1;
+		for (j = 0; *(accept + j) != '\0'; j++)
 
 		{
-			bytes++;
-			break;
+			if (*(s + i) == *(accept + j))
+			{
+				bool = 0;
+				break;
+			}
 		}
-		else if (accept[i + 1] == '\0')
-			return (bytes);
+		if (bool == 1)
+			break;
 	}
-	s++;
-	return (bytes);
+	return (i);
 }
