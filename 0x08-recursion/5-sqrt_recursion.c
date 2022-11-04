@@ -2,16 +2,13 @@
 
 /**
  * _sqrt_recursion - returns the natural square root of a number.
- * @n: input number.
- * Return: natural square root
+ * @n: number to find square root
+ * Return: if number doesnt have a natural square root -1
  */
 int _sqrt_recursion(int n)
+
 {
-	if (n < 0)
+	int i = 0;
+	if (i < 0) / *if n is negative*/)
 		return (-1);
-	if (n == 0)
-		return (0);
-	if (n == 1)
-		return (1);
-	return ((n, 2));
 }
