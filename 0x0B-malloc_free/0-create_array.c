@@ -7,7 +7,7 @@
  * @c: character
  * Return: pointer of array to character
  */
- ar *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *cr;
 	unsigned int i;
@@ -19,3 +19,5 @@
 		return (NULL);
 	for (i = 0; i < size; i++)
 		cr[i]  = c;
+	return (cr);
+}
