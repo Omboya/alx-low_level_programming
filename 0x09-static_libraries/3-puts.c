@@ -1,11 +1,10 @@
 #include "main.h"
 void _puts(char *str)
 #include<stdio.h>
-	/**
-	 * 
-	 *_puts - returns value
+	/** 
+	 * _puts - returns value
 	 * main - Entry point
-	 *   *
+	 *  *
 	 *    * Return: Always 0 (Success)
 	 */
 	int main(void)
