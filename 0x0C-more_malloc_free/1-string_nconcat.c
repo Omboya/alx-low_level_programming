@@ -9,7 +9,7 @@
  *@n: number of bytes to load on to s2
  *Return:poiter to newly allocated memory
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i;
 
@@ -28,38 +28,38 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int length1, length2, i, j;
-	char *space;
+	char *sout;
+	unsigned int ls1, ls2, lsout, i;
 
 	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
+	s1 = "";
 
-	length1 = _strlen(s1);
-	length2 = _strlen(s2);
+					if (s2 == NULL)
+								s2 = "";
 
-	if (n >= length2)
-	{
-		n = length2;
-	}
+						for (ls1 = 0; s1[ls1] != '\0'; ls1++)
+									;
 
-	space = malloc(sizeof(char) * (n + length1 + 1));
+							for (ls2 = 0; s2[ls2] != '\0'; ls2++)
+										;
 
-	if (space == NULL)
-	{
-		return (NULL);
-	}
+								if (n > ls2)
+											n = ls2;
 
-	for (i = 0 ; i < length1 ; i++)
-		space[i] = s1[i];
-	for (j = 0 ; s2[j] != '\0' && j != n ; j++, i++)
-		space[i] = s2[j];
+									lsout = ls1 + n;
 
-	space[i] = '\0';
-	return (space);
-}
+										sout = malloc(lsout + 1);
+
+											if (sout == NULL)
+														return (NULL);
+
+												for (i = 0; i < lsout; i++)
+															if (i < ls1)
+																			sout[i] = s1[i];
+														else
+																		sout[i] = s2[i - ls1];
+
+													sout[i] = '\0';
+
+														return (sout);
+
