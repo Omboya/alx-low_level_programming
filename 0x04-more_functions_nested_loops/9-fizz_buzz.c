@@ -3,7 +3,7 @@
 
 /**
  * main - prints numbers from 1 to 100 But for multiples of three print Fizz
- * Buzz is printed instead of multiples of  5 and FizzBuzz for both 5 and 3
+ *
  * Return: Always 0
  */
 
@@ -17,23 +17,23 @@ int main(void)
 		{
 			printf("FizzBuzz");
 		}
-		else if (n % 3 == 0)
+		else if (x % 3 == 0)
 		{
 			printf("Fizz")
 		}
-		else if (n % 5 == 0)
+		else if (x % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%d", n);
+			printf("%d", x);
 		}
-		if (n != 100)
+		if (x != 100)
 		{
 			printf(" ");
 		}
 	}
-	printf("\n");	
+	printf("\n");
 	return (0);
 }
