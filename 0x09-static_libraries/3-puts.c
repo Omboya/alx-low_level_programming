@@ -1,15 +1,18 @@
 #include "main.h"
+/**
+ *  * _puts - prints a string
+ *   * @str: the string
+ *    *
+ *     * Return: the length of a string
+ */
 void _puts(char *str)
-#include<stdio.h>
-	/** 
-	 * _puts - returns value
-	 * main - Entry point
-	 *  *
-	 *    * Return: Always 0 (Success)
-	 */
-	int main(void)
 {
-		puts("\"Programming is like building a multilingual puzzle");
-			return (0);
-}
+	int i = 0;
 
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
+}
