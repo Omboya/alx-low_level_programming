@@ -5,7 +5,6 @@
  * print_dog - prints character name
  * @d: Pointer to be printer
  *
- * Return: on sucess 0
  */
 void print_dog(struct dog *d)
 {
@@ -15,12 +14,16 @@ void print_dog(struct dog *d)
 			printf("Name: (nil)\n");
 		}
 		else
-			printf("Name: %char\n, d->name");
-	if (!d->age)
-	{
-		printf("age: %int\n, d->age");
-	}
-	else
-
-		printf("owner: %char\n, d->owner");
-	
+		{
+			printf("Name: %s\n, d->name");
+		}
+		printf("Age: %f\n", d->age);
+		if (!d->owner)
+		{
+			printf("owner: (nil)\n");
+		}
+		else
+		{
+			printf("owner: %s\n, d->owner");
+		}
+}	
