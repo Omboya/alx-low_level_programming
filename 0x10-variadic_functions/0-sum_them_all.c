@@ -5,7 +5,7 @@
  *   * @n: number of parameters received
  *    *
  *     * Return: 0 if n is 0 of the sum of parameters
- *      */
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 		unsigned int i;
@@ -14,17 +14,15 @@ int sum_them_all(const unsigned int n, ...)
 				va_list parameters;
 
 					va_start(parameters, n);
-
-						if (n == 0)
-								{
-											return (0);
-												}
-
-							for (i = 0 ; i < n ; i++)
-									{
-												number = va_arg(parameters, int);
-														add = add + number;
-															}
-								va_end(parameters);
-									return (add);
+					if (n == 0)
+					{
+						return (0);
+					}
+					for (i = 0 ; i < n ; i++)
+					{
+						number = va_arg(parameters, int);
+						add = add + number;
+					}
+					va_end(parameters);
+					return (add);
 }
