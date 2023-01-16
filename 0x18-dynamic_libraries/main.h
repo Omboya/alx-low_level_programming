@@ -1,7 +1,7 @@
-#ifndef _DYN_LIBS_
-#define _DYN_LIBS_
+#ifndef _MAIN_H
+#define _MAIN_H
 
-int _putchar(char c);
+int _putchar(cha c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
@@ -22,4 +22,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif
+#endif /* _MAIN_H_ */
